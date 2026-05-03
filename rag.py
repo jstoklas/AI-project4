@@ -105,8 +105,3 @@ prompt = PromptTemplate(
     template=template
 )
 chain = prompt | llm | parser
-
-test_context = """
-RAG stands for Retrieval Augmented Generation. It combines retrieval-based and generation-based approaches.
-The retriever identifies relevant documents, and the generator uses the retrieved documents to produce a response.
-"""
