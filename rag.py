@@ -35,6 +35,10 @@ chain = llm | parser
 #chain.invoke("tell me a joke")
 
 #call the functions completed in data_prep.py here 
-
+documents = load_pdfs("data")
+count_characters(documents)
+export_markdown_files(documents)
+split_docs = split_documents_by_structure(documents)
+print(f"Total split chunks: {len(split_docs)}")
 #question2 starts here
 
